@@ -1,0 +1,413 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', 'Impact', sans-serif;
+    background-color: #111;
+    color: #ddd;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+/* Custom Cursor */
+.cursor-follower {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23c0c0c0"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>');
+    background-size: contain;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #222, #000);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    animation: pulse 3s infinite alternate;
+}
+
+.token-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 10rem;
+    color: #c0c0c0;
+    text-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.5),
+        0 0 20px rgba(255, 0, 0, 0.3),
+        0 0 30px rgba(255, 0, 0, 0.1),
+        5px 5px 0 #333;
+    letter-spacing: 5px;
+    transform: skew(-5deg);
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 2rem;
+    color: #ff3333;
+    text-shadow: 2px 2px 0 #000;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.lights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent, #000 70%);
+    opacity: 0.7;
+    animation: flash 4s infinite;
+    z-index: 2;
+}
+
+.smoke {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.8), transparent);
+    animation: drift 20s infinite alternate;
+    z-index: 1;
+}
+
+/* Vault Section */
+.vault-section {
+    min-height: 60vh;
+    background: #222 url('banner.png') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.vault-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.vault-door {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    background: linear-gradient(45deg, #444, #777);
+    border: 10px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vault-door:hover {
+    transform: rotateY(-70deg);
+}
+
+.vault-img {
+    width: 80%;
+    height: auto;
+    filter: contrast(120%) brightness(90%);
+}
+
+.vault-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #222, #111);
+    padding: 2rem;
+    z-index: -1;
+    text-align: center;
+}
+
+.token-supply {
+    font-size: 1.5rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.contract-link {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(to right, #c0c0c0, #999);
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transform: skew(-5deg);
+    border: 2px solid #444;
+    transition: all 0.3s ease;
+}
+
+.contract-link:hover {
+    background: linear-gradient(to right, #ddd, #bbb);
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Buy Section */
+.buy-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, #222, #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    padding: 1.5rem 4rem;
+    background: linear-gradient(45deg, #b8860b, #ffd700);
+    border: none;
+    color: #111;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 1px 1px 0 #666;
+    box-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.5),
+        0 0 40px rgba(255, 215, 0, 0.2),
+        0 10px 20px -10px #000;
+    transform: skew(-5deg);
+    transition: all 0.3s ease;
+}
+
+.buy-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+.buy-button:hover {
+    transform: skew(-5deg) scale(1.05);
+    box-shadow: 
+        0 0 30px rgba(255, 215, 0, 0.7),
+        0 0 60px rgba(255, 215, 0, 0.3),
+        0 10px 20px -5px #000;
+}
+
+.buy-button:active {
+    transform: skew(-5deg) scale(0.98);
+}
+
+/* Lore Section */
+.lore-section {
+    padding: 5rem 2rem;
+    background: #111;
+}
+
+.lore-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: #c0c0c0;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #333;
+}
+
+.story-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-card {
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    background: #222;
+    border: 3px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-front h3 {
+    font-size: 1.5rem;
+    color: #ff3333;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 0 #000;
+}
+
+.card-front img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: contrast(120%) brightness(90%);
+}
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #333, #111);
+    padding: 2rem;
+    transform: rotateY(180deg);
+}
+
+.card-back p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.story-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.story-card:hover .card-back {
+    transform: rotateY(360deg);
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background: #000;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes drift {
+    0% {
+        transform: translateX(-5%) translateY(0);
+    }
+    100% {
+        transform: translateX(5%) translateY(-10%);
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+        top: -100%;
+    }
+    100% {
+        left: 100%;
+        top: 100%;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .token-name {
+        font-size: 5rem;
+    }
+    
+    .tagline {
+        font-size: 1.5rem;
+    }
+    
+    .buy-button {
+        font-size: 2rem;
+        padding: 1rem 2.5rem;
+    }
+    
+    .story-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .token-name {
+        font-size: 3.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .buy-button {
+        font-size: 1.5rem;
+        padding: 0.8rem 2rem;
+    }
+} 

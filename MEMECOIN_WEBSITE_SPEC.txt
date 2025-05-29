@@ -1,0 +1,60 @@
+
+📀 TECHNICAL SPECIFICATION — MEMECOIN WEBSITE (Inspired by 50 Cent Aesthetic)
+🗓 Date: 27 May 2025
+🎯 GOAL: Create a high-impact, visually aggressive one-page meme token website themed after early 2000s hip-hop culture, especially 50 Cent’s aesthetic.
+
+———
+🎨 DESIGN DIRECTION:
+- Visual Theme: Luxury street chaos — diamond chains, bullet holes, urban grit, glossy car paint, mixtape vibes.
+- Fonts: Bold, impact-type or old school hip-hop mixtape style.
+- Color Scheme: Metallic greys, deep blacks, glossy reds, icy silvers.
+- Feel: Rich, raw, unapologetic.
+
+———
+📱 STRUCTURE:
+1. **Hero Section**
+   - Name of the token (BIG, CENTERED)
+   - Tagline below: **"LAUNCHING AT PUMP.FUN 27 MAY"**
+   - Background: Animated flashing lights (like police sirens or club strobe).
+   - Interactive: Cursor changes to gold chain or bullet icon.
+   - Animation: Slow zoom-in parallax with subtle smoke/fog drifting in front.
+
+2. **Interactive Vault Section**
+   - Vault door that opens when hovered.
+   - Inside: $ token supply and contract link pop out with metallic sound effect.
+
+3. **"BUY $NOW" Section**
+   - Button styled as a platinum bar or cash bundle.
+   - Hover effect: Sparks/electric sound + shake effect.
+
+4. **"Real Stories from the Block" — Meme Lore**
+   - 5 interactive cards (flip on hover or click) containing bizarre, absurd stories.
+
+———
+📚 5 ABSURD STORIES (100+ words each):
+
+🧊 Story 1: "The Ice That Shot Back"
+They said the coldest thing on the block was the $ICE token. One night, Jamal tried to snatch someone’s seed phrase at the skatepark. But as he typed it into his burner phone, the screen froze. Literally. A chunk of ice erupted from the phone and hit him in the jaw. Witnesses say it mumbled “PUCK IT” before melting into a QR code. Jamal now runs a $ICE loyalty kiosk at 7-Eleven and says he’s “seen the crypto light.”
+
+🔥 Story 2: "The Mixtape That Minted a Million"
+Back in ’04, a guy pressed a 50 Cent mixtape onto a blank Solana wallet. People laughed. Then he dropped it into a sewer. 10 years later, a rat retrieved it and plugged it into an old Dell at a pawn shop. That wallet minted $1M worth of $ICE when the stars aligned. That Dell? Now hanging in the Louvre.
+
+🚬 Story 3: "Bulletproof Vest and Bag of Chips"
+Rico walked into the pump.fun launch wearing a bulletproof vest and holding only a bag of BBQ chips. Said he didn’t need luck, only flavor. 20 minutes later, he’s top 5 holders. Coincidence? Or did the BBQ dust whisper tokenomics in his ear?
+
+💎 Story 4: "Chain So Heavy, It Bridged"
+Tyrone’s $ICE chain was so heavy, it accidentally bridged from Ethereum to Solana by pure gravitational force. Solana devs still don’t know how. Tyrone now does DeFi tutorials on street corners wearing it, claiming the chain “talks to Raydium.”
+
+👟 Story 5: "Air Force 1s with the Private Key"
+Someone lost their Air Force 1s at a concert. Inside? A napkin with a wallet seed and a sketched 50 Cent verse. That wallet held 420B $ICE. No one knows who owns it now, but every time someone raps that verse, $ICE price spikes by 0.69%.
+
+———
+🖱 CURSOR DESIGN:
+- Normal state: Diamond-studded pointer.
+- Hover on button: Turns into a spinning bullet.
+- Idle: Slight glimmer animation loop.
+
+———
+📎 FOOTER:
+- No social buttons.
+- Just “© PUCK IT 2025 — All rights iced.”
